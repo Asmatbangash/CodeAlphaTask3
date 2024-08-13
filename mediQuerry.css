@@ -1,0 +1,63 @@
+@media only screen and (max-width: 900px){
+  nav{
+    display: none;
+  }
+  .humBurger{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 3rem;
+  }
+  .burger{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3px;
+    padding: 3px;
+  }
+}
+
+@media only screen and (max-width: 880px){
+    nav{
+     flex-wrap: wrap;
+    }
+    .searchDev{
+     width: 30%;
+     margin: 0px auto;
+    }
+    ul{
+     flex-wrap: wrap;
+ }
+ ul li{
+     width: 5%;
+     /* margin-left: 3%; */
+    } 
+     
+ }
+ 
+ @media only screen and (max-width: 600px) {
+   ul {
+     display: block;
+   }
+   ul li{
+     text-align: center;
+     width: 100%;
+   }
+   .searchDev{
+     width: 100%;
+   }
+   .contectBtn{
+     text-align: center;
+     width: 100%;
+   }
+   .main-container{
+    display: block;
+    margin-top: 0px;
+   }
+   .main-container .left, .right{
+    width: 100% ;
+   }
+   .about .aleft{
+    display: none;
+   }
+ }

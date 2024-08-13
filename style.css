@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /* color: white; */
+  font-family: "Anta", sans-serif;
+}
+
+body {
+  background-color: #eaedf0;
+  /* color: black; */
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  width: 80%;
+  margin: 0.4rem auto;
+}
+
+
+.pic {
+  width: 6%;
+  height: 8vh;
+  border-radius: 50%;
+  margin: 0rem 0.3rem 0rem 1rem;
+  border: 2px solid black;
+}
+.name {
+  margin-top: 5px;
+  color: orangered;
+}
+
+ul {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+ul a{
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+  margin: 1rem;
+  font-weight: bold;
+}
+ul li:hover {
+  cursor: pointer;
+  color: orangered;
+}
+.navbar {
+  width: 100%;
+}
+.searchDev {
+  width: 60%;
+  display: flex;
+  background: white;
+  border: none;
+  border-radius: 10px;
+  /* padding: 0.1rem; */
+  border: 2px solid black;
+}
+
+.searchBar {
+  outline: none;
+  width: 100%;
+  color: black;
+  font-size: large;
+  padding: 0.2rem 1rem;
+  border-radius: 10px;
+  border: none;
+}
+.searchIcon {
+  background-color: orangered;
+  font-size: 2rem;
+  border: none;
+  padding: 0px 5px;
+  cursor: pointer;
+  border-top-right-radius: 5px ;
+  border-bottom-left-radius: 5px;
+}
+.humBurger{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger{
+  /* display: flex; */
+  /* justify-content: center; */
+  width: 25px;
+  height: 5px;
+  background-color: white;
+  margin-top: 3px;
+  
+}
+.contectBtn {
+  width: 12%;
+  background-color: orangered;
+  color: black;
+  padding: 0.3rem;
+  margin: 0rem 0.5rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10rem;
+}
+.left {
+  width: 50%;
+  text-align: left;
+}
+.green {
+  color: orangered;
+}
+
+hr {
+  margin-top: 10px;
+  background-color: orangered;
+  transform: rotate(5deg);
+}
+
+.ResumeBtn {
+  background-color: black;
+  color: white;
+  margin: 10px 0px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.right {
+  width: 20%;
+  height: 40vh;
+  background-color: orangered;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 100%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.pic2 {
+  margin-right: 50px;
+  margin-top: 30px;
+  border-top-right-radius: 40%;
+  border-bottom-left-radius: 40%;
+  transform: rotate(40deg);
+  width: 60%;
+  height: 30vh;
+}
+.aboutH1,
+.skillH1,
+.projectH1,
+.contactH1 {
+  text-align: center;
+  margin: 5rem 0rem;
+  text-decoration: underline orangered;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .aright {
+  width: 50%;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.about .aleft {
+  width: 20%;
+  height: 40vh;
+  /* background-color: orangered; */
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+}
+
+.about .aleft:hover {
+  opacity: 0.5;
+  filter: alpha(opacity = 50);
+  cursor: pointer;
+}
+
+.ProSkills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skillset {
+  margin: 5px 15;
+  padding: 15px 15px;
+}
+
+.skillset img {
+  background-color: rgba(255, 255, 255, 0.336);
+  width: 15vw;
+  height: 25vh;
+}
+
+.skillset:hover {
+  box-shadow: 5px 5px 5px 5px black;
+  background-color: white;
+  width: 18vw;
+  height: 30vh;
+  cursor: pointer;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project div {
+  margin: 1rem 1rem;
+}
+
+.card:hover {
+  width: 60vw;
+  height: 60vh;
+  box-shadow: 5px 5px 5px 5px black;
+  cursor: pointer;
+}
+
+.project div img {
+  width: 100%;
+  height: 30vh;
+}
+
+.Footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.Footer i {
+  font-size: large;
+  margin: 5px 10px;
+}
