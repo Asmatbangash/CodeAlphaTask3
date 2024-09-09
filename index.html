@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediQuerry.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -10,148 +11,181 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <nav>
-        <img src="./images/AsmatPic.jpg" alt="pic" class="pic"> <span  class="name">Asmat Bangash</span>
-        <div class="navbar">
-            <ul>
-            <div class="searchDev">
-            <input type="search" class="searchBar">
-            <i class="fa-solid fa-magnifying-glass searchIcon"></i>
-            </div>
-           <a href="#home"> <li>> Home</li> </a>
-           <a href="#about"><li>> About</li> </a>
-           <a href="#skill"> <li>> skills</li> </a>
-           <a href="#project"> <li>> Project</li> </a>
-           <a href="#contact"> <li>> contact</li> </a>
+  <header class="d-flex justify-content-center">
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">CodeWithAsmat</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse ms-5" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skill">Skill</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">contact-us</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="humBurger">
-    <div class="burger"></div>
-    <div class="burger"></div>
-    <div class="burger"></div>
-  </div>
-  
+</header>
     <div class="main-container home" id="home">
         <div class="left">
             <h3><span class="green">My</span> name is</h3>
-            <h1>Asmat Ullah Khan Naize</h1>
-            <h3>& I'm a <span class="green">Front end Developer</span></h3>
+            <h1>Asmat Ullah Bangash</h1>
+            <h3>& I'm a <span class="green">Full stack Developer</span></h3>
             <h2>with  <span id="element"></span></h2>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-square-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
-            <div><button class="ResumeBtn">Download Resume</button></div>
+           <a href="" class="text-decoration-none"> <i class="fa-brands icon fa-facebook"></i></a>
+           <a href="" class="text-decoration-none"><i class="fa-brands icon fa-square-instagram"></i></a>
+           <a href="https://www.linkedin.com/in/asmat-bangash-09864b28a/" target="_blank" class="text-decoration-none"><i class="fa-brands icon fa-linkedin"></i> </a>
+           <a href="https://github.com/Asmatbangash" target="_blank" class="text-decoration-none"><i class="fa-brands icon fa-github"></i></a>
+           <a href=""></a> <div><button class="ResumeBtn">Download Resume</button></div>
         </div>
         <div class="right">
-            <img src="./images/AsmatPic.jpg" alt="" class="pic2">
+            <img src="./images/Asmat.png" alt="" class="pic2">
         </div>
     </div>
 
     <hr>
 
     <h1 class="aboutH1" id="about">About!</h1>
-    <div class="about">
-    <div class="aleft">
+    <div class="about" >
+    <div class="aleft" data-aos="fade-zoom-in-up">
         <img src="./images/AsmatPic.jpg" alt=""  class="pic2">
     </div>
-    <div class="aright">
-      <p>I am a undergraduate student of the Bachelor's of computer science The Agriculture University of peshawar. Currently I am working is a Front-End Developer internship at p92 IT software house at Khyber pakhtoon khwa ( kpk ). 
+    <div class="aright" data-aos="fade-left">
+      <p>I am a undergraduate student of the Bachelor's of computer science The Agriculture University of peshawar. Currently I am working is a Full-Stack Developer internship at p92 IT software  house at Khyber pakhtoon khwa ( kpk ). 
 
-      My Focus is on designing and developing websites that look great and work well.I am skilled in a range of programming languages and platforms, including HTML, CSS, javascript,bootstrap, Tailwind CSS, Reactjs and Material UI.
-      
-      If your are looking for a web Developer with and  experience, please feel free to get in touch with me.</p>
+        I am a web developer and did 50+ projects.
+        My Focus is on designing and developing websites that look great and work well.
+        For the last 1 years, I have been working as a Full-Stack Developer and have very strong skills in MERN. I can proudly assist you with Html5, Css3, Bootstrap, Javascript, React JS, Node Js, Express Js and MongoDB Responsive Web templates, Mobile templates. 
+        
+        If your are looking for a web Developer with and  experience, please feel free to get in touch with me.</p>
     </div>
 </div>
          <h1 class="skillH1" id="skill">Skills</h1>
 <div class="ProSkills">
-      <div class="skillset"><img src="images/html.png" alt="whi"></div>
-      <div class="skillset"><img src="images/css.png" alt="whi"></div>
-      <div class="skillset"><img src="images/js.png" alt="whi"></div>
-      <div class="skillset"><img src="images/bootstrap.png" alt="whi"></div>
-      <div class="skillset"><img src="images/tailwind.png" alt="whi"></div>
-      <div class="skillset"><img src="images/react.png" alt="whi"></div>
-      <div class="skillset"><img src="images/nodejs.png" alt="whi"></div>
-      <div class="skillset"><img src="images/express.png" alt="whi"></div>
-      <div class="skillset"><img src="images/mongoDB.png" alt="whi"></div>
-      <div class="skillset"><img src="images/gitandgithub.png" alt="whi"></div>   
+      <div class="skillset" data-aos="fade-left"><img src="images/html.png" alt="whi"></div>
+      <div class="skillset" data-aos="fade-left"><img src="images/css.png" alt="whi"></div>
+      <div class="skillset" data-aos="fade-left"><img src="images/js.png" alt="whi"></div>
+      <div class="skillset" data-aos="fade-left"><img src="images/bootstrap.png" alt="whi"></div>
+      <div class="skillset" data-aos="fade-left"><img src="images/tailwind.png" alt="whi"></div>
+      <div class="skillset" data-aos="fade-right"><img src="images/react.png" alt="whi"></div>
+      <div class="skillset" data-aos="fade-right"><img src="images/nodejs.png" alt="whi"></div>
+      <div class="skillset" data-aos="fade-right"><img src="images/express.png" alt="whi"></div>
+      <div class="skillset" data-aos="fade-right"><img src="images/mongoDB.png" alt="whi"></div>
+      <div class="skillset" data-aos="fade-right"><img src="images/gitandgithub.png" alt="whi"></div>   
 </div>
 
 
 <h1 class="projectH1" id="project">Project</h1>
 
 <div class="project">
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 22rem;" data-aos="fade-right">
         <img src="./images/portfolio.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">I have created personal portfolio project using html, css, javaScript.I have learn in this project html tags, css selector, css animation, css scrolling animation, some javaScript functionality and then when i created this project in react i have learn react component and how map method work in react.</p>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 22rem;" data-aos="fade-right">
         <img src="./images/TicTacToe.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">I have created TicTacToe project using html, css, javaScript.I have learn in this project html tags, css selector, css box-modeling , how javaScript logic build and then when i created this project in react i have learn react state mangement and react hook.</p>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 22rem;" data-aos="fade-right">
         <img src="./images/sunDown.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">I have created sunDown project using html, css, javaScript.I have learn in this project html tags, css selector, css box-modeling, css transition & animation and some javaScript functionality.</p>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 22rem;" data-aos="fade-down">
         <img src="./images/spotify.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">I have created spotify project using html, css, javaScript. I have learn in this project html tags, css selector, css box-modeling and  how javaScript logic build.</p>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 22rem;" data-aos="fade-down">
         <img src="./images/resturent.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">I have created resturent project using html, css, javaScript, and add some basic of backend nodejs and expressjs functionality.I have learn in this project html tags, css selector, css box-modeling ,css box-shadow, some javaScript functionality and then when i created this project in react i have learn react component and how tailwind css use in react.</p>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 22rem;" data-aos="fade-down">
         <img src="./images/ecomrace.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">I have created ecomrace project using html, css, javaScript, and use fetch method to fetch the data from backend.I have learn in this project html tags, css selector, css box-modeling , how javaScript logic build & how Api work in project. and then when i created this project in react i have learn react state mangement and react hook.</p>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 22rem;" data-aos="fade-left">
         <img src="./images/todo.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">I have created todo app project using html, css, javaScript, and use fetch method to fetch the data from backend.I have learn in this project html tags, css selector, css box-modeling , how javaScript logic build. and then when i created this project in react i have learn react component, state mangement, hook and react props.</p>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 22rem;" data-aos="fade-left">
         <img src="./images/weather.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">I have created weather app project using html, css, javaScript, and use fetch method to fetch the data from backend.I have learn in this project html tags, css selector, css box-modeling , how javaScript logic build & how Api work in project. and then when i created this project in react i have learn react component, state mangement, hooks, react props and fetch api in react.</p>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 22rem;" data-aos="fade-left">
         <img src="./images/Rock.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">I have created Rock paper Scissor Game project using html, css, javaScript.I have learn in this project html tags, css selector, css box-modeling and some javaScript functionality.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 22rem;" data-aos="fade-right">
+        <img src="./images/DataEntry.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">I have created Data Entry App Full Stack project using MERN.I have learn in this project reactjs component, hooks, props, reactjs context api & axios in reactjs  and also have learn CRUD operation with REST FUll api in nodejs, expressjs and mongoDB.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 22rem;" data-aos="fade-right">
+        <img src="./images/whatsApp.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">I have created backend whatsApp chatBoot project using nodejs, expressjs and mongoDB database.I have learn in this project routing, api creating procedure,ejs tamplating and crud operation in database.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 22rem;" data-aos="fade-right">
+        <img src="./images/Quora.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">I have created backend Quora project using nodejs, expressjs and mongoDB database.I have learn in this project routing, api creating procedure,ejs tamplating and crud operation in database.</p>
         </div>
       </div>
 </div>
 
-<footer class="Footer" id="contact">
+<footer class="Footer" id="contact" >
     <h1>Contect Me</h1>
     <p>Let's Work Together</p>
-    <p><i class="fa-solid fa-paper-plane icon"></i>bangashasmat@gmail.com</p>
-    <p><i class="fa-solid fa-phone  icon"></i>+92 335 6976877</p>
+    <a href="" class="text-decoration-none text-light"><i class="fa-solid fa-paper-plane"></i>bangashasmat@gmail.com</a>
+    <p><i class="fa-solid fa-phone"></i>+92 335 6976877</p>
     <div>
-    <a href=""><i class="fa-brands fa-facebook"></i></a>
-    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-    <a href=""><i class="fa-brands fa-github"></i></a>
+    <a href=""><i class="fa-brands icon fa-facebook"></i></a>
+    <a href="https://www.linkedin.com/in/asmat-bangash-09864b28a/" target="_blank"><i class="fa-brands icon fa-linkedin"></i></a>
+    <a href="https://github.com/Asmatbangash" target="_blank"><i class="fa-brands icon fa-github"></i></a>
     </div>
   </footer>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset:"300",
+    duration:"1000"
+  });
+</script>
 </body>
 </html>

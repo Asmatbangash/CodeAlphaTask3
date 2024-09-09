@@ -3,114 +3,15 @@
 * {
   margin: 0;
   padding: 0;
-  /* color: white; */
   font-family: "Anta", sans-serif;
 }
 
 body {
   background-color: #eaedf0;
-  /* color: black; */
   min-height: 100vh;
   overflow-x: hidden;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* flex-wrap: wrap; */
-  width: 80%;
-  margin: 0.4rem auto;
-}
-
-
-.pic {
-  width: 6%;
-  height: 8vh;
-  border-radius: 50%;
-  margin: 0rem 0.3rem 0rem 1rem;
-  border: 2px solid black;
-}
-.name {
-  margin-top: 5px;
-  color: orangered;
-}
-
-ul {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  /* flex-wrap: wrap; */
-}
-ul a{
-  text-decoration: none;
-}
-
-ul li {
-  list-style: none;
-  margin: 1rem;
-  font-weight: bold;
-}
-ul li:hover {
-  cursor: pointer;
-  color: orangered;
-}
-.navbar {
-  width: 100%;
-}
-.searchDev {
-  width: 60%;
-  display: flex;
-  background: white;
-  border: none;
-  border-radius: 10px;
-  /* padding: 0.1rem; */
-  border: 2px solid black;
-}
-
-.searchBar {
-  outline: none;
-  width: 100%;
-  color: black;
-  font-size: large;
-  padding: 0.2rem 1rem;
-  border-radius: 10px;
-  border: none;
-}
-.searchIcon {
-  background-color: orangered;
-  font-size: 2rem;
-  border: none;
-  padding: 0px 5px;
-  cursor: pointer;
-  border-top-right-radius: 5px ;
-  border-bottom-left-radius: 5px;
-}
-.humBurger{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.burger{
-  /* display: flex; */
-  /* justify-content: center; */
-  width: 25px;
-  height: 5px;
-  background-color: white;
-  margin-top: 3px;
-  
-}
-.contectBtn {
-  width: 12%;
-  background-color: orangered;
-  color: black;
-  padding: 0.3rem;
-  margin: 0rem 0.5rem;
-  border: none;
-  border-radius: 1rem;
-}
 
 .main-container {
   display: flex;
@@ -122,7 +23,24 @@ ul li:hover {
 .left {
   width: 50%;
   text-align: left;
+  position: relative;
+  animation-name: introLeft;
+  animation-duration: 5s;
+  animation-timing-function: 1;
+  animation-delay: 0s;
+  animation-direction: normal;
 }
+
+@keyframes introLeft {
+    from{
+       left: -200px;
+    }
+    to{
+      left: 0px;
+    }
+  
+}
+
 .green {
   color: orangered;
 }
@@ -139,6 +57,11 @@ hr {
   margin: 10px 0px;
   padding: 5px 10px;
   border-radius: 5px;
+  border: none;
+}
+.ResumeBtn:hover{
+  background-color: coral;
+  color: black;
 }
 .right {
   width: 20%;
@@ -148,15 +71,24 @@ hr {
   border-bottom-right-radius: 100%;
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
+  position: relative;
+  animation: introRight 5s 1 0s  normal;
 }
+
+@keyframes introRight {
+  from{
+     right: -200px;
+  }
+  to{
+    right: 0px;
+  }
+
+}
+
 .pic2 {
-  margin-right: 50px;
-  margin-top: 30px;
-  border-top-right-radius: 40%;
-  border-bottom-left-radius: 40%;
-  transform: rotate(40deg);
-  width: 60%;
-  height: 30vh;
+  border-bottom-right-radius: 25%; 
+  width: 70%;
+  height: 35vh;
 }
 .aboutH1,
 .skillH1,
@@ -176,16 +108,22 @@ hr {
   width: 50%;
   text-align: left;
   margin-left: 20px;
+  position: relative;
+  animation: introRight 5s 1 0s  normal;
 }
 
 .about .aleft {
   width: 20%;
   height: 40vh;
-  /* background-color: orangered; */
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
   border-top-left-radius: 100%;
   border-bottom-left-radius: 100%;
+  animation-name: introLeft;
+  animation-duration: 5s;
+  animation-timing-function: 1;
+  animation-delay: 0s;
+  animation-direction: normal;
 }
 
 .about .aleft:hover {
@@ -232,8 +170,6 @@ hr {
 }
 
 .card:hover {
-  width: 60vw;
-  height: 60vh;
   box-shadow: 5px 5px 5px 5px black;
   cursor: pointer;
 }
@@ -255,4 +191,11 @@ hr {
 .Footer i {
   font-size: large;
   margin: 5px 10px;
+}
+
+.icon{
+  background-color: coral;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 1.3rem;
 }

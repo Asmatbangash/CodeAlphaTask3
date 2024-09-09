@@ -1,19 +1,16 @@
 
 var typed = new Typed('#element', {
-    strings: ['HTML', 'CSS', 'javaScript', 'Bootstrap','Tailwind CSS','Materail UI','Reactjs','MongoDB'],
+    strings: ['HTML', 'CSS', 'javaScript', 'Bootstrap','Tailwind CSS','Materail UI','Reactjs','nodejs', 'expressjs','MongoDB'],
     typeSpeed: 130,
     backSpeed: 130,
     loop: true
   });
 
-
-let humBurger = document.querySelector('#humBurger');
-let nav = document.getElementsByTagName('nav')
-
-console.log(nav)
-
-humBurger.addEventListener('click', () =>{
-  nav.classList.toggle('active');
-})
+  const menuIcon = document.getElementById('menu-icon');
+  const navMenu = document.getElementById('nav-menu');
+  
+  menuIcon.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
 
 
