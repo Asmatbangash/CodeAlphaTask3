@@ -73,7 +73,9 @@ hr {
   border-bottom-left-radius: 50%;
   position: relative;
   animation: introRight 5s 1 0s  normal;
+  box-shadow: 10px 10px 10px 20px orangered;
 }
+
 
 @keyframes introRight {
   from{
@@ -86,7 +88,7 @@ hr {
 }
 
 .pic2 {
-  border-bottom-right-radius: 25%; 
+  border-radius: 25%; 
   width: 70%;
   height: 35vh;
 }
